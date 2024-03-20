@@ -6,7 +6,7 @@ To run example 1, run the file "main_example1.m" in the folder "example1".
 
 To run example 2, run the file "main_example2.m" in the folder "example2".
 
-Note that there ere some files with the same names in folders "example 1" and "example2", but their uses may be different. To avoid ambiguity， please set the the correct path when using Matlab.
+Note that there are some files with the same names in folders "example 1" and "example2", but their uses may be different. To avoid ambiguity， please set the the correct path when using Matlab.
 
 
 
