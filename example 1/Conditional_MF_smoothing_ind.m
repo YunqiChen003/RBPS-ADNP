@@ -37,9 +37,10 @@ for t=m.ss.T:-1:1
         Plsmoother(:,:,t)=Plfilter(:,:,t);
         xlsmoother(:,:,t)=xlfilter(:,:,t);
     else
-        Plsmoother(:,:,t)=inv(inv(Plfilter(:,:,t))+G.Omega{t});
+        Plinv=inv(Plfilter(:,:,t));
+        Plsmoother(:,:,t)=inv(Plinv+G.Omega{t});
         for j=1:m.ss.Ns
-            xlsmoother(:,j,t)=Plsmoother(:,:,t)*(Plfilter(:,:,t)\xlfilter(:,j,t)+G.lambda{t}(:,j));
+            xlsmoother(:,j,t)=Plsmoother(:,:,t)*(Plinv*xlfilter(:,j,t)+G.lambda{t}(:,j));
         end
     end
     e.xlhat(:,t)=mean(xlsmoother(:,:,t),2);
