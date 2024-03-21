@@ -1,4 +1,4 @@
-# RBPS_Asyn_Dep_Noises
+# RBPS-ADNP
 This repository contains the Matlab implementations of the two simulation examples in our paper "Rao-Blackwellized Particle Smoothing for Mixed Linear/Nonlinear State-Space Model with Asynchronously Dependent Noise Processes", which will be possibly published in the journal "Communications in Nonlinear Science and Numerical Simulation" . When you use this 
 repository, please cite this paper.
 
